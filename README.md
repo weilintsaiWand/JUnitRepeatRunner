@@ -24,3 +24,20 @@ protected java.util.List<org.junit.runners.model.FrameworkMethod> computeTestMet
 }
 ```
 
+# How to use 
+1. Put ```RandParameterized.java``` in the test folder 
+2. Add
+``` java
+@RunWith(RandParameterized.class)
+``` 
+and 
+``` java
+@RandParameterized.Parameters
+public static List<Object[]> data() {
+    return Arrays.asList(new Object[1000][0]);
+}
+
+public TestClassName() { }
+```
+Or please check the difference between ```TestLeaseManagement.java``` and ```TestLeaseManagementRepeat.java```
+And you will know how to apply it.
