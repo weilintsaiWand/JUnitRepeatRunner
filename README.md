@@ -16,7 +16,7 @@ The modification include
 1. Add some code for Giraffa because this task is for Giraffa Testing originally
 2. Add 
 
-''' java
+``` java
 protected java.util.List<org.junit.runners.model.FrameworkMethod> computeTestMethods() {
    java.util.List<org.junit.runners.model.FrameworkMethod> methods = super.computeTestMethods();
    Collections.shuffle(methods);
